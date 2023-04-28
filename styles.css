@@ -47,10 +47,23 @@ body > main {
 .logo-img-container + div {
   font-family: logo;
   color: white;
-  font-size: 95px
+  font-size: 95px;
+  overflow: hidden;
 }
 
 .logo-img-container + div > p {
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+.right-side {
+  width: 72.5%;
+}
+
+.upper > p {
+  padding-top: 75px;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+  margin-left: 25px;
+
 }
