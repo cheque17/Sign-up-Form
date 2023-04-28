@@ -58,22 +58,22 @@ body > main {
 
 .right-side {
   width: 72.5%;
+  font-family: "Gill Sans", sans-serif;
 }
 
 .upper {
   background-color: rgb(255, 246, 246);
-  height: 250px;
+  height: 200px;
 }
 
 .upper > p {
-  font-family: "Gill Sans", sans-serif;
   font-weight: 600;
   margin-left: 45px;
   margin-right: 125px;
 }
 
 .upper > p:first-child {
-  padding-top: 91px;
+  padding-top: 80px;
   margin-top: 0;
   margin-bottom: 0;
 }
