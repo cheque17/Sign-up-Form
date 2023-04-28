@@ -39,9 +39,6 @@ body > main {
 .logo-img-container{ 
   height: 100px;
   width: 50%;
-/*background-image: url('images/odin-lined.png');
-  background-position: center;
-  background-size: cover;*/
 }
 
 [src="images/odin-lined.png"] {
@@ -49,4 +46,9 @@ body > main {
   width: 85px;  
   float: right;
   margin-top: 9px;
+}
+
+.logo-img-container + div {
+  font-family: logo;
+  color: white;
 }
