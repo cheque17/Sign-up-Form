@@ -24,27 +24,40 @@
 					<p>You know you want to.</p>
 				</div>
 
-				<form action="" method="post" class="middle">
+				<form action="" method="post" class="middle" id="account-creation">
 					<p>Let's do this</p>
 
-					<label for="first-name">First Name</label>
-					<input type="text" id="first-name" name="first-name" required>
+					<div>
+						<label for="first-name" style="display: block;">First Name</label>
+						<input type="text" id="first-name" name="first-name" required>
+					</div>
 
-					<label for="last-name">Last Name</label>
-					<input type="text" name="last-name" id="last-name" required>
+					<div>
+						<label for="last-name">Last Name</label>
+						<input type="text" name="last-name" id="last-name" required>
+					</div>
 
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email" required>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required>
+					</div>
 
-					<label for="password">Password</label>
-					<input type="password" name="password" id="password" required>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" name="password" id="password" required>
+					</div>
 
-					<label for="confirmed-password">Confirm Password</label>
-					<input type="password" name="confirmed-password" id="confirmed-password" required>
+					<div>
+						<label for="confirmed-password">Confirm Password</label>
+						<input type="password" name="confirmed-password" id="confirmed-password" required>
+					</div>
 
 				</form>
 
-				<div class="lower"></div>
+				<div class="lower">
+					<button form="account-creation" type="submit">Create Account</button>
+					<p>Already have an account? <a href="">Log in</a></p>
+				</div>
 			</div>
 		</main>
 	</body>

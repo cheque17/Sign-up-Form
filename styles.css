@@ -61,9 +61,11 @@ body > main {
   font-family: "Gill Sans", sans-serif;
 }
 
-.upper {
+.upper,
+.lower {
   background-color: rgb(255, 246, 246);
   height: 200px;
+  overflow: hidden;
 }
 
 .upper > p {
@@ -85,5 +87,33 @@ body > main {
 
 form {
   background-color: rgb(168, 233, 103);
-  height: 200px;
+  height: 267px;
+  padding-left: 30px;
+  padding-right: 210px;
+  padding-top: 1px;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+
+[type="submit"] {
+  background-color: #587e37;
+  border-radius: 5px;
+  border: 1px;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+.lower > p {
+  margin-left: 45px;
+}
+
+a:visited, 
+a:link {
+  text-decoration: none;
+  color: #587e37;
+  font-weight: 600;
 }
