@@ -30,15 +30,11 @@ body > main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-/*font-family: logo;
-  color: aliceblue;
-  font-size: 80px;
-  text-align: center;*/
 }
 
 .logo-img-container{ 
   height: 100px;
-  width: 50%;
+  width: 45%;
 }
 
 [src="images/odin-lined.png"] {
@@ -51,4 +47,10 @@ body > main {
 .logo-img-container + div {
   font-family: logo;
   color: white;
+  font-size: 95px
+}
+
+.logo-img-container + div > p {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
