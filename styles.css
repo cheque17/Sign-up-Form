@@ -26,7 +26,20 @@ body > main {
 .left-side > div {
   position: absolute;
   top: 20%;
-  height: 100px;
+  height: 115px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+/*  font-family: logo;
+  color: aliceblue;
+  font-size: 80px;
+  text-align: center;*/
+}
+
+.logo-img-container{
+  background-image: url('images/odin-lined.png');
+  height: 100px;
+  width: 75px;
+ /*background-position: center;*/
+  background-size: cover;
 }
