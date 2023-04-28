@@ -30,16 +30,23 @@ body > main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-/*  font-family: logo;
+/*font-family: logo;
   color: aliceblue;
   font-size: 80px;
   text-align: center;*/
 }
 
-.logo-img-container{
-  background-image: url('images/odin-lined.png');
+.logo-img-container{ 
   height: 100px;
-  width: 75px;
- /*background-position: center;*/
-  background-size: cover;
+  width: 50%;
+/*background-image: url('images/odin-lined.png');
+  background-position: center;
+  background-size: cover;*/
+}
+
+[src="images/odin-lined.png"] {
+  height: 95px;
+  width: 85px;  
+  float: right;
+  margin-top: 9px;
 }
