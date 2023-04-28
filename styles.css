@@ -60,10 +60,25 @@ body > main {
   width: 72.5%;
 }
 
+.upper {
+  background-color: rgb(255, 246, 246);
+  height: 250px;
+}
+
 .upper > p {
-  padding-top: 75px;
   font-family: "Gill Sans", sans-serif;
   font-weight: 600;
-  margin-left: 25px;
+  margin-left: 45px;
+  margin-right: 125px;
+}
 
+.upper > p:first-child {
+  padding-top: 91px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.upper > p:nth-child(2n) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
