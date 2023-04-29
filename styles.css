@@ -88,11 +88,10 @@ body > main {
 form {
   background-color: rgb(168, 233, 103);
   height: 267px;
-  padding-left: 30px;
-  padding-right: 210px;
+  padding-left: 4%;
+  padding-right: 27%;
   padding-top: 1px;
-  /*display: flex;
-  flex-wrap: wrap;*/
+  overflow: auto;
 }
 
 
@@ -124,4 +123,10 @@ div > label {
 
 form > div {
   display: inline-block;
+  margin-bottom: 20px;
 }
+
+form > div:nth-child(even) {
+  margin-right: 50px;
+}
+
