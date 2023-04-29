@@ -86,7 +86,7 @@ body > main {
 }
 
 form {
-  background-color: rgb(168, 233, 103);
+  
   height: 267px;
   padding-left: 4%;
   padding-right: 27%;
@@ -119,8 +119,9 @@ a:link {
 
 div > label {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
+  margin-bottom: 3px
 }
 
 form > div {
@@ -137,4 +138,15 @@ form > p {
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 25px;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #e3e6c9;
+  height: 18px;
+}
+
+input:focus {
+  background-color: aquamarine;
+  border: 1px solid rgba(106, 255, 248, 0.911);
 }
