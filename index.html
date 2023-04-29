@@ -50,11 +50,13 @@
 					<div>
 						<label for="password">PASSWORD</label>
 						<input type="password" name="password" id="password" class="error" required>
+						<p class="non-matching"></p>
 					</div>
 
 					<div>
 						<label for="confirmed-password">CONFIRM PASSWORD</label>
 						<input type="password" name="confirmed-password" id="confirmed-password" class="error" required>
+						<p class='non-matching'></p>
 					</div>
 
 				</form>
@@ -65,5 +67,20 @@
 				</div>
 			</div>
 		</main>
+		<script>
+			const passwordInput = document.querySelector('#password');
+			const confirmedPasswordInput = document.querySelector('#confirmed-password');
+
+			function check( pw, confirmedPw) {
+				let firstPw = pw;
+				let confirmedPassword = confirmedPw;
+				if (firstPw === confirmedPassword) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+		</script>
 	</body>
 </html>
