@@ -117,3 +117,11 @@ a:link {
   color: #587e37;
   font-weight: 600;
 }
+
+div > label {
+  display: block;
+}
+
+form > div {
+  display: inline-block;
+}
