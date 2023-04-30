@@ -50,13 +50,13 @@
 					<div>
 						<label for="password">PASSWORD</label>
 						<input type="password" name="password" id="password" class="error" required>
-						<p class="non-matching"></p>
+						
 					</div>
 
 					<div>
 						<label for="confirmed-password">CONFIRM PASSWORD</label>
 						<input type="password" name="confirmed-password" id="confirmed-password" class="error" required>
-						<p class='non-matching'></p>
+						<div id='non-matching'></div>
 					</div>
 
 				</form>
@@ -67,20 +67,25 @@
 				</div>
 			</div>
 		</main>
+
+		
 		<script>
 			const passwordInput = document.querySelector('#password');
 			const confirmedPasswordInput = document.querySelector('#confirmed-password');
+			const passwordNotMatching = document.querySelector('#non-matching');
 
-			function check( pw, confirmedPw) {
-				let firstPw = pw;
-				let confirmedPassword = confirmedPw;
-				if (firstPw === confirmedPassword) {
-					return true;
-				} else {
-					return false;
-				}
+
+			passwordNotMatching.style.color='red';
+			passwordNotMatching.style.fontSize='10px'
+			passwordNotMatching.style.marginBottom='0';
+
+			confirmedPasswordInput.addEventListener('input', event => {
+				if (confirmedPasswordInput.value!==passwordInput.value) {
+				passwordNotMatching.textContent = "* Passwords do not match";
+			} else {
+				passwordNotMatching.textContent = "";
 			}
-
+			})			
 		</script>
 	</body>
 </html>
